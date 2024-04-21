@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-plusJakarta justify-center">
+    <div class="mb-3 md:mb-0 xs:text-center md:text-center md:bg-green lg:bg-grey   xl:bg-neutral">
+      <p class="text- font-bold text-5xl pt-12 pb-8">
+        <span class="text-black">Welcome To</span>
+        <span class="text-pink">UVERS Tweet</span>
+      </p>
+    </div>
+    <div class="container flex flex-wrap">
+      <!-- Form Container (Left Side) -->
+      <div class="w-full lg:w-8/12 lg:px-6 px-2 bg-white">
+        <form class="bg-white md:px-2 lg:px-12 py-6 md:py-8 lg:py-10 items-center">
+            <!-- Nama Field -->
+            <div class="mb-6">
+              <input
+                class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="nama"
+                type="text"
+                placeholder="Nama"
+              />
+            </div>
+            <div class="mb-6">
+              <input
+                class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="nim"
+                type="number"
+                placeholder="Nim"
+              />
+            </div>
+            <div class="mb-6">
+              <input
+                class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-6">
+              <input  
+                class="shadow-md appearance-none bg-white w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="tempat_tanggal_lahir"
+                type="date"
+                placeholder="Tempat Tanggal Lahir"
+              />
+            </div>
+            <div class="mb-6">
+              <input
+                class="shadow-md appearance-none bg-white w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mb-6">
+              <input
+                class="shadow-md appearance-none bg-white w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="confirm_password"
+                type="password"
+                placeholder="Confirm Password"
+              />
+            </div>
+          </form>
+      </div>
+
+      <!-- Image Container (Right Side) -->
+      <div class="w-full lg:w-4/12">
+        <img src="../src/img/Lock_Icon.png" class="mx-auto lg:mx-0 w-68" />
+        <!-- Use 'mx-auto lg:mx-0' to center the image on small screens and align it to the left on large screens -->
+      </div>
+    </div>
+  </body>
+</html>

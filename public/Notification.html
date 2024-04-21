@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-white font-sans antialiased">
+    <div class="flex h-screen">
+      <!--Large Sidebar -->
+      <!-- <div class="w-8 sm:w-12 lg:w-56 "></div> -->
+      <div class="w-16 xl:w-1/5"></div>
+      <div class="bg-white text-black xl:w-64 flex-shrink-0 fixed">
+        <img
+          src="../src/img/UVT_Logo.png"
+          class="h-8 xl:h-10 w-auto sm:items-center mx-2 xl:ml-12 my-6"
+        />
+        <nav class="mt-4 hidden xl:inline-block">
+          <div class="container flex justify-normal items-center mb-4">
+            <div class="flex items-center pl-10">
+              <img src="../src/img/Home_Icon.png" alt="Logo" class="h-7" />
+            </div>
+            <div>
+              <a
+                href="#"
+                class="bg-white text-lg font-medium hover:text-gray-700 ml-6"
+                >Home</a
+              >
+            </div>
+          </div>
+
+          <div class="container flex justify-normal items-center pl-10 my-4">
+            <div class="flex items-center">
+              <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-7" />
+            </div>
+            <div>
+              <a href="#" class="text-lg font-medium hover:text-gray-700 ml-6"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="container flex justify-normal items-center bg-white pl-10 my-4"
+          >
+            <div class="flex items-center">
+              <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-7" />
+            </div>
+            <div>
+              <a href="#" class="text-lg font-medium hover:text-gray-700 ml-6"
+                >My Friends</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="container flex justify-normal items-center bg-white pl-10 my-4"
+          >
+            <div class="flex items-center">
+              <img
+                src="../src/img/Notification_Icon_Pink.png"
+                alt="Logo"
+                class="h-7"
+              />
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-lg text-pink font-medium hover:text-gray-700 ml-6"
+                >Notifications</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="container flex justify-normal items-center bg-white pl-10 my-4"
+          >
+            <div class="flex items-center">
+              <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7" />
+            </div>
+            <div>
+              <a href="#" class="text-lg font-medium hover:text-gray-700 ml-6"
+                >Setting</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="container flex justify-normal items-center bg-white pl-10 my-4 mb-52"
+          >
+            <div class="flex items-center">
+              <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6" />
+            </div>
+            <div>
+              <a href="#" class="text-lg font-medium hover:text-gray-700 ml-6"
+                >Profile</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="container flex justify-normal items-center bg-white pl-10 my-4"
+          >
+            <div class="flex items-center">
+              <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6" />
+            </div>
+            <div>
+              <a href="#" class="text-lg font-medium hover:text-gray-700 ml-6"
+                >Help</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="container flex justify-normal items-center bg-white pl-10 my-4"
+          >
+            <div class="flex items-center">
+              <img src="../src/img/Logout1_Icon.png" alt="Logo" class="h-6" />
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-lg text-pink font-medium hover:text-gray-700 ml-6"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <!-- Small Side Bar-->
+        <div
+          class="bg-white xl:hidden items-center flex justify-center flex-col mt-10"
+        >
+          <img src="../src/img/Home_Icon.png" alt="Logo" class="h-7" />
+          <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-7 mt-3" />
+          <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-7 mt-3" />
+          <img
+            src="../src/img/Notification_Icon_Pink.png"
+            alt="Logo"
+            class="h-7 mt-3"
+          />
+          <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7 mt-3" />
+          <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6 mt-3" />
+          <div class="flex flex-col content-end mt-56">
+            <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6 mt-3" />
+            <img
+              src="../src/img/Logout1_Icon.png"
+              alt="Logo"
+              class="h-6 mt-3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="flex flex-col w-full">
+        <!-- Top Bar -->
+        <header class="bg-white">
+          <div
+            class="flex justify-start items-center py-2 px-2 sm:px-7 lg:py-4 lg:px-4 text-3xl lg:text-4xl xl:text-5xl"
+          >
+            <h1 class="font-bold mt-3 ml-5">Hi!,</h1>
+            <h1 class="font-bold text-pink mt-3 ml-1">Hendry</h1>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <div
+          class="px-4 py-8 rounded-3xl bg-neutral ml-3 sm:ml-5 lg:ml-8 mr-10 mt-2 font-plusJakarta"
+        >
+          <!-- Notifications -->
+          <h1 class="text-lg font-bold ml-2 mb-2">Hari ini</h1>
+          <div class="flex flex-col space-y-4">
+            <!-- Notification Item -->
+            <a href="Explore.html" class="block">
+              <button
+                class="bg-white p-3 md:p-5 rounded-lg shadow-md md:flex items-center md:justify-between h-20 w-full"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="../src/img/Profile_Image.png"
+                    alt="Profile"
+                    class="h-10"
+                  />
+                  <div
+                    class="xl:flex xl:flex-row text-sm md:text-base xl:text-lg"
+                  >
+                    <div class="font-semibold text-pink ml-5 whitespace-nowrap">
+                      Vioren Aulia
+                    </div>
+                    <div></div>
+                    <p class="ml-5 xl:ml-8 md:whitespace-nowrap">
+                      Mengirimkan permintaan pertemanan kepada anda.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:inline text-gray-500 text-sm xl:whitespace-nowrap"
+                >
+                  March 13, 2024
+                </div>
+              </button>
+            </a>
+
+            <a href="Explore.html" class="block">
+              <button
+                class="bg-white p-3 md:p-5 rounded-lg shadow-md md:flex items-center md:justify-between h-20 w-full"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="../src/img/Profile_Image.png"
+                    alt="Profile"
+                    class="h-10"
+                  />
+                  <div
+                    class="xl:flex xl:flex-row text-sm md:text-base xl:text-lg"
+                  >
+                    <div class="font-semibold text-pink ml-5 whitespace-nowrap">
+                      Aulia
+                    </div>
+                    <div></div>
+                    <p class="ml-5 xl:ml-8 md:whitespace-nowrap">
+                      Mengirimkan permintaan pertemanan kepada anda.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:inline text-gray-500 text-sm xl:whitespace-nowrap"
+                >
+                  March 13, 2024
+                </div>
+              </button>
+            </a>
+
+            <a href="Explore.html" class="block">
+              <button
+                class="bg-white p-3 md:p-5 rounded-lg shadow-md md:flex items-center md:justify-between h-20 w-full"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="../src/img/Profile_Image.png"
+                    alt="Profile"
+                    class="h-10"
+                  />
+                  <div
+                    class="xl:flex xl:flex-row text-sm md:text-base xl:text-lg"
+                  >
+                    <div class="font-semibold text-pink ml-5 whitespace-nowrap">
+                      Aulia
+                    </div>
+                    <div></div>
+                    <p class="ml-5 xl:ml-8 md:whitespace-nowrap">
+                      Mengirimkan permintaan pertemanan kepada anda.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:inline text-gray-500 text-sm xl:whitespace-nowrap"
+                >
+                  March 13, 2024
+                </div>
+              </button>
+            </a>
+
+            <a href="Explore.html" class="block">
+              <button
+                class="bg-white p-3 md:p-5 rounded-lg shadow-md md:flex items-center md:justify-between h-20 w-full"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="../src/img/Profile_Image.png"
+                    alt="Profile"
+                    class="h-10"
+                  />
+                  <div
+                    class="xl:flex xl:flex-row text-sm md:text-base xl:text-lg"
+                  >
+                    <div class="font-semibold text-pink ml-5 whitespace-nowrap">
+                      Aulia
+                    </div>
+                    <div></div>
+                    <p class="ml-5 xl:ml-8 md:whitespace-nowrap">
+                      Mengirimkan permintaan pertemanan kepada anda.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:inline text-gray-500 text-sm xl:whitespace-nowrap"
+                >
+                  March 13, 2024
+                </div>
+              </button>
+            </a>
+            <a href="Explore.html" class="block">
+              <button
+                class="bg-white p-3 md:p-5 rounded-lg shadow-md md:flex items-center md:justify-between h-20 w-full"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="../src/img/Profile_Image.png"
+                    alt="Profile"
+                    class="h-10"
+                  />
+                  <div
+                    class="xl:flex xl:flex-row text-sm md:text-base xl:text-lg"
+                  >
+                    <div class="font-semibold text-pink ml-5 whitespace-nowrap">
+                      Aulia
+                    </div>
+                    <div></div>
+                    <p class="ml-5 xl:ml-8 md:whitespace-nowrap">
+                      Mengirimkan permintaan pertemanan kepada anda.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:inline text-gray-500 text-sm xl:whitespace-nowrap"
+                >
+                  March 13, 2024
+                </div>
+              </button>
+            </a>
+
+            <a href="Explore.html" class="block">
+              <button
+                class="bg-white p-3 md:p-5 rounded-lg shadow-md md:flex items-center md:justify-between h-20 w-full"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="../src/img/Profile_Image.png"
+                    alt="Profile"
+                    class="h-10"
+                  />
+                  <div
+                    class="xl:flex xl:flex-row text-sm md:text-base xl:text-lg"
+                  >
+                    <div class="font-semibold text-pink ml-5 whitespace-nowrap">
+                      Aulia
+                    </div>
+                    <div></div>
+                    <p class="ml-5 xl:ml-8 md:whitespace-nowrap">
+                      Mengirimkan permintaan pertemanan kepada anda.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:inline text-gray-500 text-sm xl:whitespace-nowrap"
+                >
+                  March 13, 2024
+                </div>
+              </button>
+            </a>
+            <a href="Explore.html" class="block">
+              <button
+                class="bg-white p-3 md:p-5 rounded-lg shadow-md md:flex items-center md:justify-between h-20 w-full"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="../src/img/Profile_Image.png"
+                    alt="Profile"
+                    class="h-10"
+                  />
+                  <div
+                    class="xl:flex xl:flex-row text-sm md:text-base xl:text-lg"
+                  >
+                    <div class="font-semibold text-pink ml-5 whitespace-nowrap">
+                      Aulia
+                    </div>
+                    <div></div>
+                    <p class="ml-5 xl:ml-8 md:whitespace-nowrap">
+                      Mengirimkan permintaan pertemanan kepada anda.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:inline text-gray-500 text-sm xl:whitespace-nowrap"
+                >
+                  March 13, 2024
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

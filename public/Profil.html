@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+            
+</head>
+
+
+<body class="bg-neutral font-sans antialiased">
+    <div class="flex ">
+        <!-- Sidebar -->
+        <div class="w-40  sm:w-16   xl:w-64"></div>
+        <div class="bg-white text-black xl:w-64 flex-shrink-0 fixed">
+            <img src="../src/img/UVT_Logo.png" class="h-8 xl:h-10 w-auto sm:items-center mx-2 xl:ml-12 my-6  ">
+            <nav class="mt-4  hidden xl:inline-block ">
+                <div class="container flex justify-normal items-center mb-4">
+                    <div class="flex items-center pl-10">
+                        <img src="../src/img/Home_Icon.png" alt="Logo" class="h-7 " >
+                    </div>
+                    <div>
+                        <a href="#" class="bg-white text-lg font-medium hover:text-gray-700 ml-6">Home</a>
+                    </div>
+                </div>
+                            
+                <div class="container flex justify-normal items-center pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-7" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg  font-medium hover:text-gray-700 ml-6">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-7 " >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">My Friends</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Notification_Icon.png" alt="Logo" class="h-7 "  >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg  font-medium hover:text-gray-700 ml-6">Notifications</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Setting</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4 mb-52">
+                    <div class="flex items-center">
+                        <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6 " >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg text-pink font-medium hover:text-gray-700 ml-6">Profile</a>
+                    </div>
+                </div>
+              
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Help</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Logout1_Icon.png" alt="Logo" class="h-6 " >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg text-pink font-medium hover:text-gray-700 ml-6">Logout</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Small Side Bar-->
+            <div class=" bg-white xl:hidden items-center flex justify-center flex-col mt-10 ">
+                <img src="../src/img/Home_Icon.png" alt="Logo" class="h-7 " >
+                <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-7 mt-3" >
+                <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-7 mt-3" >
+                <img src="../src/img/Notification_Icon.png" alt="Logo" class="h-7 mt-3" >
+                <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7 mt-3" >
+                <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6 mt-3" >
+                <div class="flex  flex-col content-end mt-56">
+                    <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6 mt-3" >
+                    <img src="../src/img/Logout1_Icon.png" alt="Logo" class="h-6 mt-3" >
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="flex flex-row sm:w-10/12 md:w-7/12 xl:w-6/12   ">
+            <!-- First column (larger) -->
+            <div class="flex flex-col flex-1 overflow-hidden">
+                <!-- Content for the first column -->
+                <header class="p-4">
+                    <div class="flex justify-start items-center text-3xl">
+                        <h1 class="font-bold mt-3 ml-5">My</h1>
+                        <h1 class="font-bold text-pink mt-3 ml-1">Profile</h1>
+                    </div>
+                </header>
+                <div class="bg-white w-84  h-56  sm:h-60 shadow-lg rounded-lg mx-5 flex relative font-plusJakarta">
+                    <img id="cover" src="../src/img/Login_Image_mobile.png" class="w-full mx-6 h-32 mt-2 rounded-xl justify-center object-cover" >
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="absolute object-cover h-24 sm:h-32 lg:h-36 mt-20 sm:mt-16 ml-10 sm:ml-12 ">
+                    
+
+                    <div>
+                        <button for="fileInput" id="editCoverButton" class="text-xs absolute right-8 bottom-20 sm:bottom-24 mb-3 bg-white bg-opacity-25 backdrop-blur-sm text-white rounded-2xl py-2 px-3 hover:scale-105">Edit Cover</button>
+                        <input type="file" name="fileInput" id="fileInput" accept=".png, .jpg, .jpeg, .heic" style="display: none; visibility: none;">
+                    </div>
+                    
+                
+                    <div class=" absolute left-36 sm:left-48 lg:left-56 top-32 lg:top-36">
+                        <div class="flex flex-row mt-3 sm:mt-3 lg:mt-2">
+                            <p class="font-bold text-sm sm:text-base xl:text-lg whitespace-nowrap">Hendry</p>
+                            <p class="font-normal text-sm sm:text-base lg:text-lg ml-1 sm:ml-2">#1</p>
+                        </div>
+                        <p id="Bio" class="font-normal text-sm lg:text-base ">Mau Jadi ikan</p>
+                    </div>
+
+                    <div class="text-xs text-right absolute right-7 bottom-3 sm:bottom-4">
+                        <div class="hidden sm:inline">
+                            <p>2023131003 - TIF23</p>
+                            <p >@xchnly</p>
+                            
+                        </div>
+                        <button id="editProfileButton" class="bg-pink text-xs text-white rounded-3xl py-1 px-2 mt-3 hover:scale-105 ">Edit Profile</button>
+                        
+                       
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="bg-white w-84 h-fit shadow-lg rounded-lg mx-5  flex relative flex-wrap px-3 mt-4 justify-between">
+                    <img src="../src/img/User_Post1.png" class="h-28 w-28 rounded-md mt-3 ">
+                    <img src="../src/img/User_Post2.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post3.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post4.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post5.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post6.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post7.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post8.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post9.png" class="h-28 w-28 rounded-md mt-3">
+                    <img src="../src/img/User_Post10.png" class="h-28 w-28 rounded-md mt-3">
+                </div>
+                
+               <!-- Modal untuk edit profile -->
+                <div id="editProfileModal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50  justify-center flex place-items-center hidden">
+                    <div class="bg-white h-4/12 w-4/12 p-8 rounded-2xl"  onclick="event.stopPropagation()">
+                    <h1 class="text-xl font-bold mb-4 text-pink">Edit Profile</h1>
+                    
+                        <div class="flex items-center">
+                            <div class=" flex flex-col items-center">
+                            <img src="../src/img/Profile_Icon.png" alt="icon" class=" object-cover h-20 w-20">
+                            <button class="bg-pink text-xs text-white rounded-3xl p-2 hover:scale-105 mt-5 ">Edit Photo</button>
+                            </div>
+                            <div class="ml-6  item-center">
+                            <div class="flex">
+                                <p class="text-sm font-semibold">Nama</p>
+                                <input
+                                class="appearance-none  bg-white w-full px-4  mb-3 text-gray-700 text-sm focus:outline-none focus:shadow-outline"
+                                id="nama"
+                                type="text"
+                                placeholder="Hendry"
+                                />
+                            </div>
+                            <div class="flex ">
+                                <p class="text-sm font-semibold" id="Bio">Bio</p>
+                                <input
+                                class="appearance-none  bg-white text-sm  ml-5 w-full px-4 text-gray-700 focus:outline-none focus:shadow-outline"
+                                id="Bio"
+                                type="text"
+                                placeholder="Mau Jadi Ikan"
+                                />
+                            </div>
+                            
+                            <button id="closeModalButton" class="bg-gray-300 text-xs text-gray-700 rounded-3xl py-1 px-2 mt-4 hover:scale-105 ">Tutup</button>
+                            </div>
+                        </div>
+                    
+                </div>
+               
+           </div>  
+
+                
+            </div>
+
+            <!-- Second column (smaller) -->
+            
+        </div>
+        <div class=" hidden md:inline     bg-white rounded-xl mt-20 mb-1 ">
+            <h1 class="font-plusJakarta sm:text-xl xl:text-2xl font-semibold font italic mt-4 text-center">Achievement</h1>
+            <button class="flex items-center bg-pink text-white rounded-xl w-3/4 h-12 lg:h-20 px-1 mx-8 mt-4 font-plusJakarta">
+                <h1 class="text-xl lg:text-2xl ml-3 my-5">#1  |</h1>
+                <p class="md:text-xs lg:text-sm font-semibold my-7 ml-1 text-left mt-7 whitespace-nowrap ">Top Tweet Januari 2024</p>
+            </button>
+            <button class="flex bg-pink justify-center items-center text-white rounded-xl w-3/4  h-12 lg:h-20 px-4 lg:px-5 mx-8 mt-4 font-plusJakarta">
+                <h1 class="text-sm lg:text-base font-semibold text-center  whitespace-nowrap">First User UVERS Tweet</h1>
+            </button>
+
+            </div>
+                
+        </div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const editCoverButton = document.getElementById('editCoverButton');
+        const cover = document.getElementById('cover');
+        const profileIcon = document.getElementById('profileIcon');
+        const editProfileButton = document.getElementById('editProfileButton');
+        const editProfileModal = document.getElementById('editProfileModal');
+        const closeModalButton = document.getElementById('closeModalButton');
+
+        // Fungsi untuk mengganti gambar cover dan profil saat gambar dipilih
+        fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function() {
+                const imgData = reader.result;
+                // Mengganti gambar cover sesuai dengan gambar yang dipilih
+                cover.src = imgData;
+                // Mengganti gambar profil sesuai dengan gambar yang dipilih
+                profileIcon.src = imgData;
+            }
+
+            reader.readAsDataURL(file);
+        });
+        
+        // Fungsi untuk menampilkan input file saat tombol "Edit Cover" diklik
+        editCoverButton.addEventListener('click', function() {
+            fileInput.click();
+        });
+
+        // Fungsi untuk menampilkan modal saat tombol "Edit Profile" diklik
+         // Fungsi untuk menampilkan modal saat tombol "Edit Profile" diklik
+         editProfileButton.addEventListener('click', function(event) {
+            event.stopPropagation(); // Mencegah propogasi event ke div yang berisi gambar
+            editProfileModal.classList.remove('hidden');
+        });
+
+        // Fungsi untuk menutup modal saat tombol "Tutup" di dalam modal diklik
+        closeModalButton.addEventListener('click', function() {
+            editProfileModal.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Home</title>
+    <style>
+      body {
+        font-family: "sans-serif";
+        background-color: #f7fafc;
+        margin: 0;
+        padding: 0;
+      }
+
+      #desktop,
+      #mobile {
+        transition: width 0.3s ease-in-out;
+      }
+
+      #desktop {
+        overflow: hidden;
+        display: none;
+      }
+
+      #sideNavbar:hover #desktop {
+        display: block;
+      }
+
+      #sideNavbar:hover #mobile {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-100">
+    <div class="flex">
+      <!-- Sidebar -->
+      <div id="sideNavbar" class="flex h-screen">
+        <aside id="desktop" class="w-64 sm:w-48 bg-white text-black p-4">
+          <div class="mb-6">
+            <!-- Logo -->
+            <img src="../src/img/UVT_Logo.png" alt="Logo" class="w-16 h-auto" />
+          </div>
+          <nav>
+            <ul>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/Home_Icon.png"
+                  alt="Home Icon"
+                  class="w-7 h-auto"
+                />
+                <a href="#" class="ml-4">Home</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/Explore_Icon.png"
+                  alt="Explore Icon"
+                  class="w-5 h-auto ml-1"
+                />
+                <a href="#" class="ml-5">Explore</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/MyFriend_Icon.png"
+                  alt="My Friends Icon"
+                  class="h-4 w-auto ml-1"
+                />
+                <a href="#" class="ml-5">My Friends</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <i class="fas fa-bell text-xl ml-1"></i>
+                <a href="#" class="ml-5">Notifications</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/Setting_Icon.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-autp ml-1"
+                />
+                <a href="#" class="ml-4">Settings</a>
+              </li>
+              <li class="flex items-center">
+                <img
+                  src="../src/img/Temp_Profile.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-autp ml-1"
+                />
+                <a href="#" class="ml-4">Profile</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <aside id="mobile" class="w-16 bg-white text-black p-4 hidden sm:block">
+          <!-- Logo -->
+          <div class="mb-6">
+            <img src="../src/img/UVT_Logo.png" alt="Logo" class="w-10 h-auto" />
+          </div>
+
+          <nav>
+            <ul>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Home_Icon.png"
+                  alt="Home Icon"
+                  class="w-7 h-auto"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Explore_Icon.png"
+                  alt="Explore Icon"
+                  class="w-5 h-auto ml-1"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/MyFriend_Icon.png"
+                  alt="My Friends Icon"
+                  class="h-4 w-auto ml-1"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <i class="fas fa-bell text-xl ml-1"></i>
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Setting_Icon.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-autp ml-1"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Temp_Profile.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-autp ml-1"
+                />
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+
+      <div class="flex flex-row w-3/5">
+        <div class="flex flex-col flex-1 overflow-hidden relative"> <!-- Added relative positioning -->
+            <!-- Content for the first column -->
+            <header class="p-4">
+                <p class="text-3xl font-semibold">
+                    <span class="text-black">My</span>
+                    <span class="text-grey"> Profile</span><br>
+                </p>
+            </header>
+            <div class="bg-white w-4/5 h-1/4 rounded-lg m-5 border flex justify-center items-center shadow-lg relative"> <!-- Added relative positioning -->
+                <!-- Box with shadow -->
+                <div class="w-full h-full overflow-hidden rounded-lg relative"> <!-- Added relative positioning -->
+                    <!-- Image inside the box -->
+                    <img src="../src/img/Login_Image_mobile.png" class="w-full h-2/4 object-cover px-4 py-3" />
+                </div>
+                <div class="absolute rounded-lg left-10 top-10"> <!-- Adjusted absolute positioning -->
+                    <img src="../src/img/Temp_Profile.png" alt="Login Image" class="w-auto h-24" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </body>
+</html>

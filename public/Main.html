@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+            
+</head>
+
+
+<body class="bg-white font-sans antialiased">
+    <div class="flex h-screen ">
+        <!-- Sidebar -->
+        <div class="w-16 xl:w-1/4"></div>
+        <div class="bg-white text-black xl:w-64 flex-shrink-0 fixed">
+            <img src="../src/img/UVT_Logo.png" class="h-8 xl:h-10 w-auto sm:items-center mx-2 xl:ml-12 my-6 ">
+            <nav class="mt-4  hidden xl:inline-block ">
+                <div class="container flex justify-normal items-center mb-4">
+                    <div class="flex items-center pl-10">
+                        <img src="../src/img/Home_Icon_Pink.png" alt="Logo" class="h-7 " >
+                    </div>
+                    <div>
+                        <a href="#" class="bg-white text-lg text-pink  font-medium hover:text-gray-700 ml-6">Home</a>
+                    </div>
+                </div>
+                            
+                <div class="container flex justify-normal items-center pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-7" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-7 " >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">My Friends</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Notification_Icon.png" alt="Logo" class="h-7 "  >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Notifications</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Setting</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4 mb-52">
+                    <div class="flex items-center">
+                        <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6 " >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg  font-medium hover:text-gray-700 ml-6">Profile</a>
+                    </div>
+                </div>
+              
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Help</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Logout1_Icon.png" alt="Logo" class="h-6 " >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg text-pink font-medium hover:text-gray-700 ml-6">Logout</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Small Side Bar-->
+            <div class=" bg-white xl:hidden items-center flex justify-center flex-col mt-10 ">
+            <img src="../src/img/Home_Icon_Pink.png" alt="Logo" class="h-7 " >
+            <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/Notification_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6 mt-3" >
+            <div class="flex  flex-col content-end mt-56">
+                <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6 mt-3" >
+                <img src="../src/img/Logout1_Icon.png" alt="Logo" class="h-6 mt-3" >
+            </div>
+            
+
+            </div>
+        </div>
+        <!-- Content -->
+
+        <div class=" w-10/12 grid grid-cols-1">
+            <div class="lg:hidden mt-7 mx-5  relative w-7/12 h-10 flex justify-center items-center ">
+                <div class="absolute left-0 ml-16  text-black">|</div>
+                <img src="../src/img/Search_Icon.png" alt="Search" class="absolute left-6 h-7 w-7">
+                <input type="text" class="bg-black text-sm bg-opacity-10 pl-20 pr-5 py-2 border-gray-300 rounded-2xl w-full" placeholder="Search Friends">
+            </div>    
+            <div class="border-b-8 border-lightGrey sm:mx-10 lg:mt-8 font-plusJakarta ">
+                <div class="flex justify-start mt-3">
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-10 w-10 my-3 mx-3">
+                    <p class="text-lightGrey text-sm font-medium ml-3 mt-5">What's Happening...</p>
+                    
+                </div>
+                <div class="flex flex-row  ml-20 mb-4">
+                    <img src="../src/img/Image_Icon.png" alt="Image" class="h-5 w-5 mr-5">
+                    <img src="../src/img/Gif_Icon.png" alt="Gif" class="h-5 w-5 mr-5">
+                    <img src="../src/img/Sticker_Icon.png" alt="Sticker" class="h-5 w-5">
+                    <button class="bg-pink text-sm font-semibold text-white rounded-3xl py-1 px-4 mt-3 ml-auto mr-7">Tweet</button>
+                </div>
+            </div>
+            <!-- Post 1 -->
+            <div class="border-b-8 border-lightGrey sm:mx-5">
+                <div>
+                    <div class=" flex items-center relative mt-3 mb-2">
+                        <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-10 w-10 sm:ml-3" >
+                        <h1 class="ml-3 font-plusJakarta font-bold">Hendry</h1>
+                        <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5"> 
+                        <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                        <p class="font-extrabold text-black text-opacity-50 mx-2">&middot;</p>
+                        <p class="text-xs sm:text-sm text-black text-opacity-50 font-plusJakarta">1 Jam yang lalu</p>
+                    </div>
+
+                    <div>
+                        <p class="font-normal text-sm ml-5 sm:ml-16">趁还有时间，开心吧！</p>
+                        <img src="../src/img/User_Post11.png" alt="Post" class="h-52 w-72 sm:w-80 lg:w-7/12 ml-5 sm:ml-16 mt-2">
+                        <div class="flex  ml-8 sm:ml-16 w-7/12 mt-3 mb-8 ">
+                            <img src="../src/img/Like_Icon.png" alt="Like" class="w-6 h-6 sm:ml-4">
+                            <img src="../src/img/Comment_Icon.png" alt="Comment" class="w-6 h-6 mx-24 sm:mx-28">
+                            <img src="../src/img/Save_Icon.png" alt="Save" class="w-6 h-6 ">
+                        </div>
+                    </div>
+                </div>  
+            
+            </div>
+            <!-- post 2 -->
+            <div class="border-b-8 border-lightGrey sm:mx-5" >
+                <div class=" flex items-center relative mt-3 mb-4">
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-10 w-10 sm:ml-3" >
+                    <h1 class="ml-3 font-plusJakarta font-bold">Hendry</h1>
+                    <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5">
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                    <p class="font-extrabold text-black text-opacity-50 mx-2">&middot;</p>
+                    <p class="text-xs sm:text-sm text-black text-opacity-50 font-plusJakarta">1 Jam yang lalu</p>
+                </div>
+                
+                <div class=" flex items-center relative mt-3 mb-2">
+                    <p class="font-normal text-sm ml-5 sm:ml-16">Mantap Jiwa Guys! 🤣🤣</p>
+                </div>
+            </div>
+
+              <!-- post 3 -->
+              <div class="border-b-8 border-lightGrey sm:mx-5">
+                <div>
+                    <div class=" flex items-center relative mt-3 mb-2">
+                        <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-10 w-10 sm:ml-3" >
+                        <h1 class="ml-3 font-plusJakarta font-bold">Hendry</h1>
+                        <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5">
+                        <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                        <p class="font-extrabold text-black text-opacity-50 mx-2">&middot;</p>
+                        <p class="text-xs sm:text-sm text-black text-opacity-50 font-plusJakarta">1 Jam yang lalu</p>
+                    </div>
+
+                    <div>
+                        <p class="font-normal text-sm ml-5 sm:ml-16">趁还有时间，开心吧！</p>
+                        <img src="../src/img/User_Post11.png" alt="Post" class="h-52 w-72 sm:w-80 lg:w-7/12 ml-5 sm:ml-16 mt-2">
+                        <div class="flex  ml-8 sm:ml-16 w-7/12 mt-3 mb-8 ">
+                            <img src="../src/img/Like_Icon.png" alt="Like" class="w-6 h-6 sm:ml-4">
+                            <img src="../src/img/Comment_Icon.png" alt="Comment" class="w-6 h-6 mx-24 sm:mx-28">
+                            <img src="../src/img/Save_Icon.png" alt="Save" class="w-6 h-6 ">
+                        </div>
+                    </div>
+                </div>  
+            
+            
+            </div>
+            
+        </div>
+
+    <div class=" w-1/2  mr-12 font-plusJakarta hidden lg:inline">
+        <div class="mt-7 mx-5  relative w-7/12 h-10 flex justify-center items-center ">
+            <div class="absolute left-0 ml-16  text-black">|</div>
+            <img src="../src/img/Search_Icon.png" alt="Search" class="absolute left-6 h-7 w-7">
+            <input type="text" class="bg-black text-sm bg-opacity-10 pl-20 pr-5 py-2 border-gray-300 rounded-2xl w-full" placeholder="Search Friends">
+        </div>
+        <h1 class="font-semibold text-6xl mt-10 ml-4">TOP</h1>
+        <h1 class="font-semibold text-4xl mt-1 ml-4 text-pink ">Tweet Today</h1>
+        
+        <div class="mt-10 ml-4">
+            <div class="flex">
+                <h1 class="font-semibold text-lg ">TOP USERS </h1>
+                <H1 class="font-semibold text-lg  text-pink ml-1">TODAY</H1>
+            </div>
+
+            <div class="border-b-8 border-lightGrey ml-1 mr-20">
+                <div class=" flex items-center relative mt-4 mb-3">
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-7 w-7 mx-3" >
+                    <h1 class="font-plusJakarta font-bold">Hendry</h1>
+                    <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5">
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                </div>
+            </div>
+
+            <div class="border-b-8 border-lightGrey ml-1 mr-20">
+                <div class=" flex items-center relative mt-4 mb-3">
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-7 w-7 mx-3" >
+                    <h1 class="font-plusJakarta font-bold">Hendry</h1>
+                    <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5">
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                </div>
+            </div>
+            <div class="border-b-8 border-lightGrey ml-1 mr-20">
+                <div class=" flex items-center relative mt-4 mb-3">
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-7 w-7 mx-3" >
+                    <h1 class="font-plusJakarta font-bold">Hendry</h1>
+                    <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5">
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="mt-10 ml-4">
+            <div class="flex">
+                <h1 class="font-semibold text-lg ">TOP TWEET </h1>
+                <H1 class="font-semibold text-lg  text-pink ml-1">TODAY</H1>
+            </div>
+
+            <div class="border-b-8 border-lightGrey ml-1 mr-20">
+                <div class=" flex items-center relative mt-4 mb-1">
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-7 w-7 mx-3" >
+                    <h1 class="font-plusJakarta font-bold">Hendry</h1>
+                    <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5">
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                    <p class="font-extrabold text-black text-opacity-50 mx-2">&middot;</p>
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta  whitespace-nowrap">1 Jam yang lalu</p>
+                </div>
+                <div class=" flex items-center relative mb-4">
+                    <p class="font-normal text-sm ml-12">Mantap Jiwa Guys! 🤣🤣</p>
+                </div>
+            </div>
+
+            <div class="border-b-8 border-lightGrey ml-1 mr-20">
+                <div class=" flex items-center relative mt-4 mb-1">
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="h-7 w-7 mx-3" >
+                    <h1 class="font-plusJakarta font-bold">Hendry</h1>
+                    <img src="../src/img/Verified_Icon.png" alt="Verified" class="h-5 w-5">
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta ml-2">@xchnly</p>
+                    <p class="font-extrabold text-black text-opacity-50 mx-2">&middot;</p>
+                    <p class="text-sm text-black text-opacity-50 font-plusJakarta whitespace-nowrap">1 Jam yang lalu</p>
+                </div>
+                <div class=" flex items-center relative mb-4">
+                    <p class="font-normal text-sm ml-12">Mantap Jiwa Guys! 🤣🤣</p>
+                </div>
+            </div>
+
+         
+            
+       
+    </div>
+
+    </div>
+</body>
+
+</html>
